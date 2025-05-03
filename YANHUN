@@ -507,6 +507,17 @@ Tab:AddButton({
 })
 
 local Tab = Window:MakeTab({
+	Name = "死鐵軌",
+	Icon = "rbxassetid://6087485864",
+	PremiumOnly = false
+})
+Tab:AddButton({
+	Name = "刷票",
+	Callback = function()
+loadstring(game:HttpGet(" https://raw.githubusercontent.com/ArdyBotzz/NatHub/refs/heads/master/NatHub.lua"))();
+        end
+}）
+local Tab = Window:MakeTab({
 	Name = "关于",
 	Icon = "rbxassetid://6087485864",
 	PremiumOnly = false
